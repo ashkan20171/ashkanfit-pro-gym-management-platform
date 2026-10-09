@@ -1,0 +1,20 @@
+﻿namespace AshkanFitPro {
+ partial class TrainerDialog {
+  private System.ComponentModel.IContainer components=null;
+  private System.Windows.Forms.Label labelTitle,labelName,labelSpecialty,labelPhone;
+  private System.Windows.Forms.TextBox textName,textSpecialty,textPhone;
+  private System.Windows.Forms.Button buttonSave,buttonCancel;
+  protected override void Dispose(bool disposing){if(disposing&&components!=null)components.Dispose();base.Dispose(disposing);}
+  private void InitializeComponent(){
+   this.labelTitle=new System.Windows.Forms.Label();this.labelName=new System.Windows.Forms.Label();this.labelSpecialty=new System.Windows.Forms.Label();this.labelPhone=new System.Windows.Forms.Label();this.textName=new System.Windows.Forms.TextBox();this.textSpecialty=new System.Windows.Forms.TextBox();this.textPhone=new System.Windows.Forms.TextBox();this.buttonSave=new System.Windows.Forms.Button();this.buttonCancel=new System.Windows.Forms.Button();this.SuspendLayout();
+   this.BackColor=System.Drawing.Color.FromArgb(12,24,40);this.ForeColor=System.Drawing.Color.White;this.Font=new System.Drawing.Font("Segoe UI",11F);this.ClientSize=new System.Drawing.Size(540,440);this.MinimumSize=new System.Drawing.Size(540,440);this.MaximumSize=new System.Drawing.Size(760,600);this.StartPosition=System.Windows.Forms.FormStartPosition.CenterParent;this.FormBorderStyle=System.Windows.Forms.FormBorderStyle.Sizable;this.Name="TrainerDialog";
+   this.labelTitle.Name="labelTitle";this.labelTitle.Text="TRAINER PROFILE";this.labelTitle.Font=new System.Drawing.Font("Segoe UI",19F,System.Drawing.FontStyle.Bold);this.labelTitle.ForeColor=System.Drawing.Color.FromArgb(42,218,185);this.labelTitle.SetBounds(36,24,465,55);this.labelTitle.Anchor=System.Windows.Forms.AnchorStyles.Top|System.Windows.Forms.AnchorStyles.Left|System.Windows.Forms.AnchorStyles.Right;
+   this.labelName.Name="labelName";this.labelName.Text="Trainer name";this.labelName.SetBounds(36,95,460,27);this.labelSpecialty.Name="labelSpecialty";this.labelSpecialty.Text="Specialty";this.labelSpecialty.SetBounds(36,177,460,27);this.labelPhone.Name="labelPhone";this.labelPhone.Text="Phone";this.labelPhone.SetBounds(36,259,460,27);
+   this.textName.Name="textName";this.textName.MaxLength=100;this.textName.SetBounds(36,125,465,32);this.textSpecialty.Name="textSpecialty";this.textSpecialty.MaxLength=100;this.textSpecialty.SetBounds(36,207,465,32);this.textPhone.Name="textPhone";this.textPhone.MaxLength=24;this.textPhone.SetBounds(36,289,465,32);
+   foreach(System.Windows.Forms.TextBox t in new[]{this.textName,this.textSpecialty,this.textPhone}){t.BackColor=System.Drawing.Color.FromArgb(28,45,63);t.ForeColor=System.Drawing.Color.White;t.BorderStyle=System.Windows.Forms.BorderStyle.FixedSingle;t.Anchor=System.Windows.Forms.AnchorStyles.Top|System.Windows.Forms.AnchorStyles.Left|System.Windows.Forms.AnchorStyles.Right;}
+   this.buttonSave.Name="buttonSave";this.buttonSave.Text="Save trainer";this.buttonSave.BackColor=System.Drawing.Color.FromArgb(42,218,185);this.buttonSave.ForeColor=System.Drawing.Color.FromArgb(8,22,35);this.buttonSave.FlatStyle=System.Windows.Forms.FlatStyle.Flat;this.buttonSave.SetBounds(276,356,225,46);this.buttonSave.Anchor=System.Windows.Forms.AnchorStyles.Bottom|System.Windows.Forms.AnchorStyles.Right;
+   this.buttonCancel.Name="buttonCancel";this.buttonCancel.Text="Cancel";this.buttonCancel.BackColor=System.Drawing.Color.FromArgb(36,56,73);this.buttonCancel.ForeColor=System.Drawing.Color.White;this.buttonCancel.FlatStyle=System.Windows.Forms.FlatStyle.Flat;this.buttonCancel.SetBounds(36,356,225,46);this.buttonCancel.Anchor=System.Windows.Forms.AnchorStyles.Bottom|System.Windows.Forms.AnchorStyles.Left;
+   this.Controls.AddRange(new System.Windows.Forms.Control[]{this.labelTitle,this.labelName,this.labelSpecialty,this.labelPhone,this.textName,this.textSpecialty,this.textPhone,this.buttonSave,this.buttonCancel});this.AcceptButton=this.buttonSave;this.CancelButton=this.buttonCancel;this.ResumeLayout(false);this.PerformLayout();
+  }
+ }
+}

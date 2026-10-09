@@ -1,0 +1,4 @@
+Repository name: ashkanfit-pro-gym-management-platform
+About: Bilingual C# WinForms gym management platform with SQL Server, membership analytics, finance dashboards, audit history and data-quality checks.
+Website: (leave blank unless deployed)
+Topics: csharp, winforms, dotnet-framework, sql-server, gym-management, desktop-app, bilingual, rtl, ado-net, portfolio

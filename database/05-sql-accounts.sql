@@ -1,0 +1,17 @@
+USE AshkanFitPro;
+GO
+IF OBJECT_ID(N'dbo.AppUsers',N'U') IS NULL
+BEGIN
+ CREATE TABLE dbo.AppUsers
+ (
+  UserName NVARCHAR(100) NOT NULL CONSTRAINT PK_AppUsers PRIMARY KEY,
+  Salt NVARCHAR(100) NOT NULL,
+  PasswordHash NVARCHAR(150) NOT NULL,
+  Iterations INT NOT NULL,
+  Role NVARCHAR(20) NOT NULL,
+  TrainerId UNIQUEIDENTIFIER NULL,
+  CreatedAt DATETIME2 NOT NULL CONSTRAINT DF_AppUsers_CreatedAt DEFAULT SYSUTCDATETIME(),
+  CONSTRAINT CK_AppUsers_Role CHECK(Role IN ('Admin','Trainer','Reception'))
+ );
+END;
+GO
